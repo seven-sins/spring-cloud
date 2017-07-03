@@ -1,0 +1,19 @@
+server:
+  port: 9777
+  context-path: /base
+
+eureka:
+  client: 
+    serviceUrl:
+      defaultZone: http://127.0.0.1:7777/eureka/
+
+spring:
+  application:
+    name: srv-base
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: srv-config
+      name: srv-core
+      profile: dev

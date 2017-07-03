@@ -1,0 +1,1 @@
+include "core", "srv-discovery", "srv-config", "srv-base", "srv-gateway", "srv-auth"

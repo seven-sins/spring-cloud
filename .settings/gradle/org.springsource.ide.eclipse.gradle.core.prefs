@@ -1,0 +1,5 @@
+#org.springsource.ide.eclipse.gradle.core.preferences.GradleProjectPreferences
+#Mon Jun 26 15:33:43 CST 2017
+build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;core;srv-auth;srv-base;srv-config;srv-discovery;srv-gateway;
+org.springsource.ide.eclipse.gradle.linkedresources=
+org.springsource.ide.eclipse.gradle.rootprojectloc=

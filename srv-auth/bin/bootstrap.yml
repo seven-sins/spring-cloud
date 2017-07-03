@@ -1,0 +1,6 @@
+server:
+  port: 7780
+
+spring:
+  application:
+    name: srv-auth

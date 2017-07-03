@@ -1,0 +1,15 @@
+server:
+  port: 7777
+spring:
+  application:
+    name: srv-discovery
+eureka:
+  instance: 
+    prefer-ip-address: true
+  #server:  
+   # enableSelfPreservation: false #  关闭自我保护模式
+  client:
+    registerWithEureka: true  #是否将eureka自身作为应用注册到eureka注册中心
+    fetchRegistry: false   
+    serviceUrl: 
+      defaultZone: http://127.0.0.1:7777/eureka/

@@ -1,0 +1,18 @@
+server:
+  port: 7779
+
+spring:
+  application:
+    name: srv-gateway
+
+eureka:
+  client: 
+    serviceUrl:
+      defaultZone: http://127.0.0.1:7777/eureka/
+      
+zuul:
+  routes:
+    srv-base:
+      path: /base/**
+      strip-prefix: false
+      service-id: srv-base

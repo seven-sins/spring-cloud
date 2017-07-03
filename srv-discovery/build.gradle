@@ -1,0 +1,16 @@
+
+ext {
+	springCloudVersion = 'Dalston.SR1'
+}
+
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	compile('org.springframework.cloud:spring-cloud-starter-eureka-server')
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}

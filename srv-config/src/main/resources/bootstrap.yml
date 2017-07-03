@@ -1,0 +1,22 @@
+server:
+  port: 7778
+
+spring:
+  application:
+    name: srv-config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:///F:/srv_conf
+        encrypt:
+          enabled: false
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client: 
+    serviceUrl:
+      defaultZone: http://127.0.0.1:7777/eureka/
